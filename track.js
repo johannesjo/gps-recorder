@@ -31,7 +31,7 @@ function startTrack() {
     currentData = [];
     trackingIntervalId = window.setInterval(() => {
       collectEntry();
-      log.innerText = currentData.map(JSON.stringify).reverse().join(',\n');
+      log.innerText = currentData.slice(-10).map(JSON.stringify).reverse().join(',\n');
     }, interval);
   }
   isTracking = true;
