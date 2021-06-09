@@ -1,0 +1,6 @@
+pre {
+    border: 1px solid black;
+    min-height: 20px;
+    max-height: 400px;
+    overflow: auto;
+}
